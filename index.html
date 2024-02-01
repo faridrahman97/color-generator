@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Choose your color!</h1>
+            <h4>Click on a hex value to copy to clipboard</h4>
+            <form id="color-form">
+                <input type="color" id="color-picker">
+                <select id="dropdown">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="submit-btn">Get color scheme</button>
+            </form>
+            <div id="color-palette">
+                <div class="color-item" id="ci0"></div>
+                <div class="color-item" id="ci1"></div>
+                <div class="color-item" id="ci2"></div>
+                <div class="color-item" id="ci3"></div>
+                <div class="color-item" id="ci4"></div>
+            </div>
+            <div class="labels-div">
+                <div id="labels">
+                    <p class="label-item" id="label0">#473954</p>
+                    <p class="label-item" id="label1">#473954</p>
+                    <p class="label-item" id="label2">#473954</p>
+                    <p class="label-item" id="label3">#473954</p>
+                    <p class="label-item" id="label4">#473954</p>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
